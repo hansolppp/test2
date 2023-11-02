@@ -351,6 +351,7 @@ main {
   overflow: hidden;
   box-shadow: 20px 20px 40px 0px rgba(0,0,0,0.4);
   transform: translate(0);
+  position: relative;
 }
 .pad-video:before {
   content: '';
@@ -391,6 +392,42 @@ main {
   width: 100%;
   height: 100%;
 } */
+
+.pad-video-inside {
+  position: relative;
+}
+/* navigation */
+.btn-next, .btn-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-130%);
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  opacity: 0.9;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-next {
+  left: 93%;
+}
+
+.btn-prev {
+  right: 93%;
+}
+
+.btn-next .material-symbols-outlined, .btn-prev .material-symbols-outlined {
+  color: #333;
+  font-size: 28px;
+  line-height: 40px;
+  padding-left: 2px;
+}
+
+
 
 .pad-contents {
   padding: 50px 0;
@@ -550,7 +587,6 @@ main {
 }
 .ab-profile .profile-left .info {
   margin-top: 100px;
-  margin-bottom: 30px;
 }
 .ab-profile .profile-left .info .info-top {
   position: relative;
@@ -567,6 +603,7 @@ main {
 .info-top h1 span {
   font-size: 2rem;
   background-color: #fff5ee;
+  z-index: 1;
 }
 .ab-profile .profile-left .info .info-top .circle {
   position: absolute;
@@ -601,7 +638,7 @@ main {
   margin-bottom: 20px;
 }
 .ab-profile .profile-left .experiences p {
-  line-height: 25px;
+  line-height: 30px;
 }
 
 
@@ -698,14 +735,91 @@ main {
 
 /* ================== contact 영역 ================== */
 #contact {
-  height: 760px;
+  padding-top: 100px;
+  height: 700px;
 }
-#contact .container {}
+#contact .container {
+  position: relative;
+}
 #contact .container h2 {
   font-size: 4rem;
   color: #FFC4BC;
+  position: absolute;
+  left: 255px;
+}
+#contact .container .contact-box {
+  display: flex;
+}
+#contact .container .contact-box .icon-box {
+  flex-basis: 50%;
+  padding-top: 50px;
+}
+#contact .icon-box .sns {
+  padding: 100px;
+}
+#contact .icon-box .sns ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+#contact .icon-box .sns ul li {
+  margin-right: 30px;
+}
+#contact .icon-box .sns ul li img {}
+#contact .insta {
+  width: 50px;
+  height: 50px;
+}
+#contact .blog {
+  width: 50px;
+  height: 50px;
+}
+#contact .youtube {
+  width: 60px;
+  height: 50px;
+}
+#contact .contact-txt {
+  padding: 30px;
+  text-align: center;
+}
+#contact .contact-txt p {
+  font-weight: bold;
+  padding: 5px 0;
+}
+#contact .contact-txt span {
+  font-weight: normal;
 }
 
+
+.form-box {
+  flex-basis: 50%;
+}
+.form-box form {}
+.form-box form fieldset {
+  /* border: 1px solid #ddd; */
+  border: none;
+  padding: 0 50px 30px;
+  width: 30%;
+}
+input {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  width: 400px;
+}
+#message {
+  margin-top: 10px;
+  display: block;
+  border: 1px solid #ddd;
+  width: 400px;
+  height: 150px;
+}
+.form-button {
+  width: 100px;
+  position: absolute;
+  right: 500px;
+}
 
 /* ================== footer 영역 ================== */
 footer .container {
