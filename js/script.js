@@ -1,8 +1,11 @@
 new Swiper('.swiper-video', {
   loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
 	navigation: {
-	  prevEl: ".swiper-button-prev",
-	  nextEl: ".swiper-button-next",
+	  prevEl: ".btn-prev",
+	  nextEl: ".btn-next",
   }
 });
 
@@ -34,7 +37,7 @@ $(document).ready(function(){
   // 화면사이즈체크
   $(window).resize(function(){
     let tmp = $(window).width()
-    if(tmp > 960) {
+    if(tmp > 900) {
       mobileBtn.removeClass('mobile-btn-active')
       navMobile.removeClass('active')
       layerMask.removeClass('active')
