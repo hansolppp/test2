@@ -8,33 +8,18 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <div class="wrap">
-    <!-- mobile menu button -->
-    <!-- <a href="#" class="mobile-btn">
-      <span class="line-top"></span>
-      <span class="line"></span>
-      <span class="line-bottom"></span>
-    </a> -->
-    <!-- mobile menu -->
-    <!-- <div class="nav-mobile">
-      <ul class="menu-mobile">
-        <li class="active"><a href="#home">home</a></li>
-        <li><a href="#work">work</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
-    </div> -->
-    <!-- mobile menu mask -->
-    <!-- <div class="layer-mask"></div> -->
     <!-- header -->
     <header>
       <div class="container">
-        <h1 class="logo"><a href="#"><img src="images/logo 수정22.png" width="150px" height="50px" alt=""></a></h1>
+        <h1 class="logo"><a href="#"><img src="images/logo 수정(분홍).png" width="150px" height="50px" alt=""></a></h1>
         <nav>
           <ul>
             <li class="on"><a href="#home">HOME</a></li>
@@ -94,25 +79,34 @@
                     <div class="pad-video-inside swiper swiper-video">
                       <div class="pad-video-src swiper-wrapper">
                         <div class="swiper-slide">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/LjBptMVM8D0?si=YCO_1O5JCaVV3rxX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/Oxe4jIVXVBM?si=HYyT86u9Etqjhk7z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="swiper-slide">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/K8TGo_lGCg4?si=OeXT8PaEMNMmhR6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/icSHCGTyKUg?si=LYF7nswqBLpcnWkD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="swiper-slide">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/b6QwHORQk0k?si=YCWhGvUIZ6IaYE0S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/f7wRK3cD1Kw?si=lWxrvgMHmKAn5HTn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="swiper-slide">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/UCwnAIWbsXA?si=fZ_6NtRs8pcHPq3H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/N9C3ss3jlag?si=kyZLjDOotZXLZ2ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="swiper-slide">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/itoT_rHhGdA?si=a3BtVDk6bxeRvLIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/UNwoD8wuk6Q?si=AAjlWIAJGnu6qIXm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                       </div>
+                      <!-- If we need pagination -->
                       <div class="swiper-pagination"></div>
-	                    <!-- If we need navigation buttons -->
-                      <div class="swiper-button-prev"></div>
-                      <div class="swiper-button-next"></div>
+                      <!-- If we need navigation buttons -->
+                      <div class="btn-prev">
+                        <span class="material-symbols-outlined">
+                          navigate_before
+                          </span>
+                      </div>
+                      <div class="btn-next">
+                        <span class="material-symbols-outlined">
+                          navigate_next
+                          </span>
+                      </div>
                     </div>
                     <div class="pad-video-inside swiper swiper-video">
                       <div class="pad-video-src swiper-wrapper">
@@ -123,22 +117,24 @@
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/le6UoXl9r5A?si=QKBRMAZ0oPoMY-ab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                       </div>
+                      <!-- If we need pagination -->
                       <div class="swiper-pagination"></div>
-	                    <!-- If we need navigation buttons -->
+                      <!-- If we need navigation buttons -->
                       <div class="swiper-button-prev"></div>
                       <div class="swiper-button-next"></div>
                     </div>
                     <div class="pad-video-inside swiper swiper-video">
                       <div class="pad-video-src swiper-wrapper">
                         <div class="swiper-slide">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/ymWjpbz9CCU?si=9dgSUJLMmL-dUlnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/auDBrknSrwc?si=EDV2g_F0YJBmjs2e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="swiper-slide">
                           <iframe width="960" height="540" src="https://www.youtube.com/embed/e0ksg9iTyQY?si=E3AbuY1yI73lJXh7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                       </div>
+                      <!-- If we need pagination -->
                       <div class="swiper-pagination"></div>
-	                    <!-- If we need navigation buttons -->
+                      <!-- If we need navigation buttons -->
                       <div class="swiper-button-prev"></div>
                       <div class="swiper-button-next"></div>
                     </div>
@@ -157,22 +153,24 @@
                           <iframe width="960" height="540" src="https://www.youtube.com/embed/An6LvWQuj_8?si=eAvFEl9PURo4cSLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                       </div>
+                      <!-- If we need pagination -->
                       <div class="swiper-pagination"></div>
-	                    <!-- If we need navigation buttons -->
+                      <!-- If we need navigation buttons -->
                       <div class="swiper-button-prev"></div>
                       <div class="swiper-button-next"></div>
                     </div>
                     <div class="pad-video-inside swiper swiper-video">
                       <div class="pad-video-src swiper-wrapper">
                         <div class="swiper-slide">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/oKGglIL2LAA?si=tuLaS5fVbXH2IDaS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/P_g9XBl45jk?si=_Vwj0gTpy4vCvIpW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="swiper-slide">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/CZ7xncONEcU?si=HX7MebqeawXLpf6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/piCcY8Nj9lo?si=AP7IAqljYxcEWF8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                       </div>
+                      <!-- If we need pagination -->
                       <div class="swiper-pagination"></div>
-	                    <!-- If we need navigation buttons -->
+                      <!-- If we need navigation buttons -->
                       <div class="swiper-button-prev"></div>
                       <div class="swiper-button-next"></div>
                     </div>
@@ -257,19 +255,19 @@
                 </div>
               </div>
               <div class="pad-controls">
-                <button type="button" style="background-image: url(/images/wedding.PNG)" class="is_active">
+                <button type="button" style="background-image: url(images/wedding.PNG)" class="is_active">
                   <span>웨딩영상</span>
                 </button>
-                <button type="button" style="background-image: url(/images/sketch.PNG)" class="is_active">
+                <button type="button" style="background-image: url(images/sketch.PNG)" class="is_active">
                   <span>스케치</span>
                 </button>
-                <button type="button" style="background-image: url(/images/dolphin.PNG)">
+                <button type="button" style="background-image: url(images/dolphin.PNG)">
                   <span>다큐멘터리</span>
                 </button>
-                <button type="button" style="background-image: url(/images/hongbo.PNG)">
+                <button type="button" style="background-image: url(images/hongbo.PNG)">
                   <span>홍보영상</span>
                 </button>
-                <button type="button" style="background-image: url(/images/wedding.PNG)">
+                <button type="button" style="background-image: url(images/wedding.PNG)">
                   <span>모션그래픽</span>
                 </button>
               </div>
@@ -352,7 +350,7 @@
               </div>
               <div class="profile-license">
                 <div class="img-box">
-                  <img src="images/suzy.jpg" alt="">
+                  <img src="images/프로필.png" alt="">
                 </div>
                 <div class="license-box">
                   <h3>license</h3>
@@ -371,8 +369,41 @@
         <div class="container">
           <h2>CONTACT</h2>
           <div class="contact-box">
-            <div class="icon-box"></div>
-            <div class="img-box"></div>
+            <div class="icon-box">
+              <div class="sns">
+                <ul>
+                  <li><a href="#">
+                    <img src="images/instagram-icon-logo-symbol-free-png.webp" alt="" class="insta">
+                  </a></li>
+                  <li><a href="#">
+                    <img src="images/블로그1.png" alt="" class="blog">
+                  </a></li>
+                  <li><a href="#">
+                    <img src="images/YouTube_full-color_icon_(2017).svg.png" alt=""
+                    class="youtube">
+                  </a></li>
+                </ul>
+                <div class="contact-txt">
+                  <p>phone number : <span>010.9230.9598</span></p>
+                  <p>address : <span>Seo-gu, Daegu, Republic of Korea</span></p>
+                  <p>e-mail : <span>phansol1026@naver.com</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="form-box">
+              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mgejqekg" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="name" id="full-name" placeholder="이름 입력" required="">
+                  <label for="email-address">Email Address</label>
+                  <input type="email" name="_replyto" id="email-address" placeholder="이메일 입력" required="">
+                  <label for="message">Message</label>
+                  <textarea rows="5" name="message" id="message" placeholder="남기실 말씀" required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit" class="form-button">
+              </form>
+            </div>
           </div>
         </div>
       </section>
