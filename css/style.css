@@ -341,6 +341,7 @@ main {
 }
 .pad-header {
   width: 70%;
+  position: relative;
 }
 .pad-screen {}
 .pad-video{
@@ -396,10 +397,12 @@ main {
 .pad-video-inside {
   position: relative;
 }
+
+
 /* navigation */
 .btn-next, .btn-prev {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-130%);
   font-size: 0;
   width: 40px;
@@ -413,11 +416,11 @@ main {
 }
 
 .btn-next {
-  left: 93%;
+  left: 98%;
 }
 
 .btn-prev {
-  right: 93%;
+  right: 98%;
 }
 
 .btn-next .material-symbols-outlined, .btn-prev .material-symbols-outlined {
@@ -427,6 +430,23 @@ main {
   padding-left: 2px;
 }
 
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 200px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all .3s ease-in-out;
+  bottom: -30px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
 
 
 .pad-contents {
@@ -462,6 +482,9 @@ main {
   margin-left: 50px;
   font-weight: 300;
 }
+.pad-contents .contents-box p {
+  line-height: 30px;
+}
 .pad-contents .contents-box .contents-1 {
   margin-right: 5rem;
 }
@@ -488,7 +511,7 @@ main {
   margin-bottom: 40px;
   position: relative;
   opacity: 1;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 .pad-controls button span {
@@ -501,9 +524,10 @@ main {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #643AD6;
   border-radius: 20px;
-  opacity: 0.6;
+  background-color: #643AD6;
+  opacity: 0.7;
+  transition: all .3s ease-in-out;
 }
 .pad-controls button img {
   position: absolute;
