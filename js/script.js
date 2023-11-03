@@ -1,5 +1,4 @@
 new Swiper('.swiper-video', {
-  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -8,6 +7,9 @@ new Swiper('.swiper-video', {
 	  nextEl: ".btn-next",
   }
 });
+
+
+
 
 $(document).ready(function(){
   let mobileBtn = $('.mobile-btn'),
@@ -149,5 +151,10 @@ $(document).ready(function(){
   skill("#c4d", 0.6)
 }) 
 
-
+$(document).ready(function(){
+  sr.reveal('.info-bottom, .experiences', {
+    origin: 'top',
+    interval: 1000,
+})
+})
 
